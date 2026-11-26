@@ -1,34 +1,37 @@
+
 import { Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
-import { SobreComponent } from './pages/sobre/sobre.component';
-import { LoginComponent } from './pages/login/login.component';
-import { CadastroComponent } from './pages/cadastro/cadastro.component';
-import { RecuperarSenhaComponent } from './pages/recuperar-senha/recuperar-senha.component';
-import { AdminComponent } from './pages/admin/admin.component';
+
+import { Home } from './pages/home/home';
+import { Sobre } from './pages/sobre/sobre';
+import { Login } from './pages/login/login';
+import { Cadastro } from './pages/cadastro/cadastro';
+import { RecuperarSenha } from './pages/recuperar-senha/recuperar-senha';
+import { Admin } from './pages/admin/admin';
+
 export const routes: Routes = [
-      {
+  {
     path: '',
-    component: HomeComponent
+    component: Home
   },
   {
     path: 'sobre',
-    component: SobreComponent
+    component: Sobre
   },
   {
     path: 'login',
-    component: LoginComponent
+    component: Login
   },
   {
     path: 'cadastro',
-    component: CadastroComponent
+    component: Cadastro
   },
   {
     path: 'recuperar-senha',
-    component: RecuperarSenhaComponent
+    component: RecuperarSenha
   },
   {
     path: 'admin',
-    component: AdminComponent
+    component: Admin
   },
   {
     path: '**',

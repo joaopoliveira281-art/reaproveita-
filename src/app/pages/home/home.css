@@ -1,0 +1,562 @@
+
+/* Configurações gerais */
+:host {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #26352c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.pagina {
+  width: 100%;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Cabeçalho */
+.cabecalho {
+  background-color: #ffffff;
+  border-bottom: 1px solid #edf1ed;
+}
+
+.cabecalho-conteudo {
+  min-height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #247a4b;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.logo-icone {
+  font-size: 32px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.menu a {
+  color: #657168;
+  text-decoration: none;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.menu a:hover,
+.menu a.ativo {
+  color: #247a4b;
+}
+
+.botao {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.botao-cadastro {
+  background-color: #247a4b;
+  color: white;
+}
+
+.botao-cadastro:hover {
+  background-color: #195d37;
+}
+
+/* Banner principal */
+.banner {
+  background: linear-gradient(120deg, #f0f8f0, #e5f3e7);
+  padding: 75px 0;
+}
+
+.banner-conteudo {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+  gap: 50px;
+}
+
+.etiqueta {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 30px;
+  background-color: #d8eedc;
+  color: #247a4b;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.banner-texto h1 {
+  margin: 25px 0;
+  font-size: 48px;
+  line-height: 1.2;
+  color: #26352c;
+}
+
+.banner-texto h1 span {
+  display: block;
+  color: #247a4b;
+}
+
+.banner-texto > p {
+  max-width: 520px;
+  color: #68766c;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.banner-botoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.botao-principal {
+  background-color: #247a4b;
+  color: white;
+}
+
+.botao-principal:hover {
+  background-color: #195d37;
+  transform: translateY(-3px);
+}
+
+.botao-secundario {
+  border: 1px solid #247a4b;
+  color: #247a4b;
+}
+
+.botao-secundario:hover {
+  background-color: #d8eedc;
+}
+
+.banner-destaque {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 35px;
+}
+
+.banner-destaque > span {
+  font-size: 30px;
+}
+
+.banner-destaque p {
+  margin: 0;
+  color: #68766c;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.banner-destaque strong {
+  display: block;
+  color: #247a4b;
+}
+
+/* Ilustração do banner */
+.banner-imagem {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 350px;
+}
+
+.imagem-circulo {
+  width: 320px;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #cce8cf;
+  box-shadow: 0 20px 50px #247a4b20;
+}
+
+.emoji-principal {
+  font-size: 150px;
+}
+
+.cartao-flutuante {
+  position: absolute;
+  right: 0;
+  bottom: 35px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 22px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px #00000012;
+}
+
+.cartao-flutuante > span {
+  font-size: 30px;
+}
+
+.cartao-flutuante strong,
+.cartao-flutuante small {
+  display: block;
+}
+
+.cartao-flutuante strong {
+  color: #247a4b;
+  margin-bottom: 5px;
+}
+
+.cartao-flutuante small {
+  color: #879188;
+}
+
+/* Categorias */
+.categorias {
+  padding: 80px 0;
+}
+
+.titulo-secao {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.subtitulo {
+  color: #247a4b;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.titulo-secao h2 {
+  margin: 15px 0;
+  color: #26352c;
+  font-size: 34px;
+}
+
+.titulo-secao p {
+  color: #78847b;
+  font-size: 16px;
+}
+
+.categorias-lista {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.categoria-card {
+  padding: 30px 20px;
+  text-align: center;
+  border: 1px solid #edf1ed;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.categoria-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 30px #0000000d;
+}
+
+.categoria-icone {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  border-radius: 20px;
+  font-size: 35px;
+}
+
+.azul {
+  background-color: #e2efff;
+}
+
+.amarelo {
+  background-color: #fff3d5;
+}
+
+.rosa {
+  background-color: #ffe5ec;
+}
+
+.verde {
+  background-color: #e0f4e4;
+}
+
+.categoria-card h3 {
+  margin: 0 0 10px;
+  color: #26352c;
+  font-size: 18px;
+}
+
+.categoria-card p {
+  margin: 0;
+  color: #78847b;
+  font-size: 14px;
+}
+
+/* Como funciona */
+.como-funciona {
+  padding: 80px 0;
+  background-color: #f7faf7;
+}
+
+.passos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.passo {
+  padding: 30px;
+  background-color: white;
+  border-radius: 15px;
+  border: 1px solid #edf1ed;
+}
+
+.passo-numero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  background-color: #dff0e2;
+  color: #247a4b;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.passo h3 {
+  margin: 0 0 15px;
+  font-size: 21px;
+}
+
+.passo p {
+  margin: 0;
+  color: #78847b;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* Chamada final */
+.chamada-final {
+  padding: 60px 0;
+  background-color: #247a4b;
+}
+
+.chamada-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.chamada-conteudo h2 {
+  margin: 0 0 15px;
+  color: white;
+  font-size: 30px;
+}
+
+.chamada-conteudo p {
+  margin: 0;
+  color: #d9f0df;
+  font-size: 16px;
+}
+
+.botao-branco {
+  background-color: white;
+  color: #247a4b;
+  white-space: nowrap;
+}
+
+.botao-branco:hover {
+  background-color: #e7f4e9;
+}
+
+/* Rodapé */
+.rodape {
+  padding: 30px 0;
+  background-color: #f7faf7;
+}
+
+.rodape-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logo-rodape {
+  font-size: 21px;
+}
+
+.logo-rodape .logo-icone {
+  font-size: 27px;
+}
+
+.rodape p,
+.copyright {
+  color: #78847b;
+  font-size: 14px;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 900px) {
+  .banner-conteudo {
+    grid-template-columns: 1fr;
+  }
+
+  .banner-imagem {
+    min-height: 300px;
+  }
+
+  .imagem-circulo {
+    width: 260px;
+    height: 260px;
+  }
+
+  .emoji-principal {
+    font-size: 120px;
+  }
+
+  .categorias-lista {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .chamada-conteudo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 600px) {
+  .cabecalho-conteudo {
+    flex-wrap: wrap;
+    padding: 20px 0;
+  }
+
+  .logo {
+    font-size: 21px;
+  }
+
+  .menu {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .menu a {
+    font-size: 14px;
+  }
+
+  .botao-cadastro {
+    padding: 11px 16px;
+    font-size: 13px;
+  }
+
+  .banner {
+    padding: 50px 0;
+  }
+
+  .banner-texto h1 {
+    font-size: 36px;
+  }
+
+  .banner-texto > p {
+    font-size: 15px;
+  }
+
+  .banner-imagem {
+    min-height: 250px;
+  }
+
+  .imagem-circulo {
+    width: 220px;
+    height: 220px;
+  }
+
+  .emoji-principal {
+    font-size: 100px;
+  }
+
+  .cartao-flutuante {
+    right: 0;
+    bottom: 10px;
+    padding: 12px 15px;
+  }
+
+  .categorias,
+  .como-funciona {
+    padding: 55px 0;
+  }
+
+  .titulo-secao h2 {
+    font-size: 27px;
+  }
+
+  .titulo-secao p {
+    font-size: 14px;
+  }
+
+  .categorias-lista {
+    gap: 12px;
+  }
+
+  .categoria-card {
+    padding: 22px 10px;
+  }
+
+  .categoria-card h3 {
+    font-size: 16px;
+  }
+
+  .categoria-card p {
+    font-size: 12px;
+  }
+
+  .passos {
+    grid-template-columns: 1fr;
+  }
+
+  .chamada-conteudo h2 {
+    font-size: 25px;
+  }
+
+  .botao-branco {
+    white-space: normal;
+  }
+
+  .rodape-conteudo {
+    flex-direction: column;
+    text-align: center;
+  }
+}
