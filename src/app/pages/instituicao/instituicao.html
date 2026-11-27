@@ -1,0 +1,64 @@
+<div class="pagina-instituicao">
+
+    <header class="cabecalho">
+       <div>
+        <span class="identificacao">REAPROVEITA / IMPACTO SOCIAL</span>
+        <h1>Painel da Instituição</h1>
+        <p>Acompanhe as oportunidades de doação.</p> 
+    </div>
+
+    <div class="perfil">
+        <span class="perfil-icone">♡</span>
+        <div>
+            <strong>Representante</strong>
+            <small>Instituição social</small>
+        </div>
+    </div>
+ </header>
+ <section class="Boas-Vindas">
+    <span>ÁREA DA INSTITUIÇÃO</span>
+
+    @if (AuthService.contextoAtivo(); as contexto) {
+        <h2>Olá, {{ teste.nomeOrganização }}!</h2>
+        <p>
+            Aqui você poderá acompanhar ofertas de alimentos e gerenciar suas doações.
+        </p>
+    }  @else {
+        <h2>Bem-Vindo ao REAPROVEITA+!</h2>
+        <p>Selecione uma instituição para continuar.</p>
+    }
+    <section>
+
+    </section class="indicadores">
+
+    <article class="card">
+        <span class="icone">📦</span>
+        <h3>ofertas disponíveis</h3>
+        <p>Aguardando integração</p>
+    </article>
+
+    <article class="card">
+        <span class="icone">🤝</span>
+        <h3>Recebimentos</h3>
+        <p>Aguardando integração</p>
+    </article>
+
+    <section>
+        
+    </section class="painel-ofertas">
+    <div>
+        <h2>Ofertas de alimentos</h2>
+        <p>
+            Nesta área aparecerão os alimentos disponibilizados pelos estabelecimentos.
+        </p>
+    </div>
+
+    <div class="estado-vazio">
+        <span>🌱</span>
+        <h3>As ofertas aparecerão aqui</h3>
+        <p>
+            Estamos preparando a integração com o sistema de doações.
+        </p>
+    </div>
+    </section>
+</div>
