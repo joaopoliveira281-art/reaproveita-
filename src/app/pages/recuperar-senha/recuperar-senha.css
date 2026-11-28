@@ -1,0 +1,308 @@
+
+:host {
+  display: block;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #26352c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.pagina-recuperar {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f8f4;
+}
+
+/* CABEÇALHO */
+
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  padding: 25px 5%;
+
+  background-color: #ffffff;
+  border-bottom: 1px solid #e8eee8;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #27834e;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.logo-icone {
+  font-size: 32px;
+}
+
+.link-voltar {
+  color: #68766c;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.link-voltar:hover {
+  color: #27834e;
+}
+
+/* CONTEÚDO */
+
+.recuperar-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 50px 20px;
+}
+
+/* CARD */
+
+.recuperar-card {
+  width: 100%;
+  max-width: 480px;
+
+  padding: 45px;
+
+  background-color: #ffffff;
+  border: 1px solid #e8eee8;
+  border-radius: 18px;
+
+  box-shadow: 0 15px 45px #26352c08;
+}
+
+/* ÍCONE E TÍTULO */
+
+.recuperar-icone {
+  width: 70px;
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 25px;
+
+  border-radius: 20px;
+  background-color: #e1f2e4;
+
+  font-size: 32px;
+}
+
+.subtitulo {
+  color: #27834e;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.recuperar-card h1 {
+  margin: 18px 0;
+
+  color: #26352c;
+  font-size: 32px;
+}
+
+.descricao {
+  margin-bottom: 30px;
+
+  color: #78847b;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* CAMPO */
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  margin-bottom: 25px;
+}
+
+.campo label {
+  color: #39483e;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.campo input {
+  width: 100%;
+  height: 55px;
+
+  padding: 0 16px;
+
+  border: 1px solid #dce4dd;
+  border-radius: 9px;
+
+  outline: none;
+
+  color: #26352c;
+  background-color: #ffffff;
+
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.campo input::placeholder {
+  color: #a0aaa2;
+}
+
+.campo input:focus {
+  border-color: #27834e;
+  box-shadow: 0 0 0 3px #27834e15;
+}
+
+/* BOTÃO */
+
+.botao-enviar {
+  width: 100%;
+  height: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 20px;
+
+  border: none;
+  border-radius: 9px;
+
+  background-color: #27834e;
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.botao-enviar:hover {
+  background-color: #1c633a;
+  transform: translateY(-2px);
+}
+
+.botao-enviar span {
+  font-size: 22px;
+}
+
+/* MENSAGEM DE AJUDA */
+
+.mensagem-ajuda {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+
+  margin-top: 25px;
+  padding: 15px;
+
+  border-radius: 9px;
+  background-color: #f3f8f3;
+}
+
+.mensagem-ajuda span {
+  font-size: 20px;
+}
+
+.mensagem-ajuda p {
+  margin: 0;
+
+  color: #78847b;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+/* LINK LOGIN */
+
+.link-login {
+  display: block;
+  margin-top: 30px;
+
+  text-align: center;
+
+  color: #78847b;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.link-login strong {
+  color: #27834e;
+}
+
+.link-login:hover strong {
+  text-decoration: underline;
+}
+
+/* RODAPÉ */
+
+.rodape {
+  padding: 25px 15px;
+  text-align: center;
+}
+
+.rodape p {
+  margin: 0;
+
+  color: #9aa49c;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+  .cabecalho {
+    padding: 20px 5%;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .logo-icone {
+    font-size: 27px;
+  }
+
+  .link-voltar {
+    font-size: 12px;
+  }
+
+  .recuperar-main {
+    padding: 30px 15px;
+  }
+
+  .recuperar-card {
+    padding: 30px 22px;
+  }
+
+  .recuperar-card h1 {
+    font-size: 27px;
+  }
+
+  .descricao {
+    font-size: 14px;
+  }
+
+  .campo input {
+    height: 50px;
+    font-size: 14px;
+  }
+
+  .botao-enviar {
+    height: 50px;
+    font-size: 14px;
+  }
+}

@@ -1,1 +1,200 @@
-<p>cadastro works!</p>
+
+<div class="pagina-cadastro">
+
+  <!-- CABEÇALHO -->
+  <header class="cabecalho">
+    <div class="cabecalho-conteudo">
+
+      <a href="/" class="logo">
+        <span>Reaproveita</span>
+      </a>
+
+      <div class="link-login">
+        Já possui uma conta?
+        <a href="/login">Entrar</a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- CONTEÚDO -->
+  <main class="cadastro-main">
+
+    <div class="cadastro-card">
+
+      <!-- TÍTULO -->
+      <div class="cadastro-titulo">
+
+        <div class="cadastro-icone">
+          
+        </div>
+
+        <span class="subtitulo">FAÇA PARTE DO REAPROVEITA</span>
+
+        <h1>Crie sua conta</h1>
+
+        <p>
+          Junte-se a uma comunidade que acredita
+          em um futuro com menos desperdício.
+        </p>
+
+      </div>
+
+      <!-- FORMULÁRIO -->
+      <form>
+
+        <!-- TIPO DE USUÁRIO -->
+        <div class="campo">
+          <label for="tipoUsuario">
+            Tipo de usuário
+          </label>
+
+          <select
+            id="tipoUsuario"
+            name="tipoUsuario"
+            required
+          >
+            <option value="" disabled selected>
+              Selecione seu tipo de usuário
+            </option>
+
+            <option value="estabelecimento">
+              Estabelecimento
+            </option>
+
+            <option value="instituicao">
+              Instituição
+            </option>
+
+            <option value="usuario">
+              Usuário comum
+            </option>
+          </select>
+        </div>
+
+        <!-- NOME -->
+        <div class="campo">
+          <label for="nome">
+            Nome completo
+          </label>
+
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Digite seu nome completo"
+            required
+          />
+        </div>
+
+        <!-- E-MAIL -->
+        <div class="campo">
+          <label for="email">
+            E-mail
+          </label>
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="exemplo@email.com"
+            required
+          />
+        </div>
+
+        <!-- TELEFONE -->
+        <div class="campo">
+          <label for="telefone">
+            Telefone
+          </label>
+
+          <input
+            type="tel"
+            id="telefone"
+            name="telefone"
+            placeholder="(00) 00000-0000"
+            required
+          />
+        </div>
+
+        <!-- SENHA -->
+        <div class="campo">
+          <label for="senha">
+            Senha
+          </label>
+
+          <input
+            type="password"
+            id="senha"
+            name="senha"
+            placeholder="Crie uma senha"
+            minlength="8"
+            required
+          />
+
+          <small>
+            A senha deve possuir pelo menos 8 caracteres.
+          </small>
+        </div>
+
+        <!-- CONFIRMAR SENHA -->
+        <div class="campo">
+          <label for="confirmarSenha">
+            Confirmar senha
+          </label>
+
+          <input
+            type="password"
+            id="confirmarSenha"
+            name="confirmarSenha"
+            placeholder="Digite a senha novamente"
+            required
+          />
+        </div>
+
+        <!-- TERMOS -->
+        <div class="termos">
+          <input
+            type="checkbox"
+            id="termos"
+            name="termos"
+            required
+          />
+
+          <label for="termos">
+            Li e aceito os
+            <a href="/termos">termos de uso</a>
+            e a
+            <a href="/privacidade">política de privacidade</a>.
+          </label>
+        </div>
+
+        <!-- BOTÃO -->
+        <button type="submit" class="botao-cadastrar">
+          Criar minha conta
+          <span>→</span>
+        </button>
+
+      </form>
+
+      <!-- INFORMAÇÃO -->
+      <div class="cadastro-informacao">
+
+        <p>
+          Seus dados serão utilizados para
+          o funcionamento da plataforma Reaproveita.
+        </p>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="rodape">
+    <p>
+      © 2026 Reaproveita — Conectando alimentos e solidariedade.
+    </p>
+  </footer>
+
+</div>

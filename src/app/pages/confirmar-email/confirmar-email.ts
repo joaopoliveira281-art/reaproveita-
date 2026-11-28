@@ -1,9 +1,11 @@
+
 import { Component } from '@angular/core';
 
 @Component({
-  imports: [],
   selector: 'app-confirmar-email',
-  styleUrl: './confirmar-email.css',
+  standalone: true,
+  imports: [],
   templateUrl: './confirmar-email.html',
+  styleUrl: './confirmar-email.css',
 })
 export class ConfirmarEmail {}

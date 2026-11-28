@@ -1,14 +1,18 @@
+
 import { Component, inject } from '@angular/core';
-import { AuthService } from '../../core/services/auth.sevice';
+import { AuthService } from '../../core/services/auth.service';
 
 @Component({
-    selector: 'app-instituicao',
-    imports: [],
-    templateUrl: './instituicao.html',
-    styleUrl: '/instituicao.css',
+  selector: 'app-instituicao',
+  standalone: true,
+  imports: [],
+  templateUrl: './instituicao.html',
+  styleUrl: './instituicao.css'
 })
-export class instituicao { 
+export class Instituicao {
+  protected readonly authService = inject(AuthService);
 
-    protected readonly AuthService = inject(AuthService) 
-
+  get nomeOrganizacao(): string | null {
+    return this.authService.contextoAtivo()?.nomeOrganizacao ?? null;
+  }
 }

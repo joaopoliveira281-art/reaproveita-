@@ -1,1 +1,85 @@
-<p>recuperar-senha works!</p>
+
+<div class="pagina-recuperar">
+
+  <!-- CABEÇALHO -->
+  <header class="cabecalho">
+    <a href="/" class="logo">
+      <span class="logo-icone">♻</span>
+      <span>Reaproveita</span>
+    </a>
+
+    <a href="/login" class="link-voltar">
+      ← Voltar ao login
+    </a>
+  </header>
+
+  <!-- CONTEÚDO -->
+  <main class="recuperar-main">
+
+    <section class="recuperar-card">
+
+      <div class="recuperar-icone">
+        🔐
+      </div>
+
+      <span class="subtitulo">
+        RECUPERAÇÃO DE ACESSO
+      </span>
+
+      <h1>Esqueceu sua senha?</h1>
+
+      <p class="descricao">
+        Não se preocupe! Informe o e-mail utilizado no
+        cadastro e enviaremos as instruções para
+        você recuperar o acesso à sua conta.
+      </p>
+
+      <!-- FORMULÁRIO -->
+      <form>
+
+        <div class="campo">
+          <label for="email">
+            E-mail cadastrado
+          </label>
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Digite seu e-mail"
+            required
+          />
+        </div>
+
+        <button type="submit" class="botao-enviar">
+          Enviar instruções
+          <span>→</span>
+        </button>
+
+      </form>
+
+      <div class="mensagem-ajuda">
+        <span>💚</span>
+
+        <p>
+          Se o e-mail estiver cadastrado, você receberá
+          as instruções para redefinir sua senha.
+        </p>
+      </div>
+
+      <a href="/login" class="link-login">
+        Lembrou sua senha? <strong>Entrar</strong>
+      </a>
+
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="rodape">
+    <p>
+      © 2026 Reaproveita — Conectando alimentos e solidariedade.
+    </p>
+  </footer>
+
+</div>

@@ -1,0 +1,281 @@
+
+:host {
+  display: block;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #26352c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.pagina-confirmar {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f8f4;
+}
+
+/* CABEÇALHO */
+
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  padding: 25px 5%;
+
+  background-color: #ffffff;
+  border-bottom: 1px solid #e8eee8;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #27834e;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.logo-icone {
+  font-size: 32px;
+}
+
+.link-login {
+  color: #27834e;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.link-login:hover {
+  text-decoration: underline;
+}
+
+/* CONTEÚDO */
+
+.confirmar-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 50px 20px;
+}
+
+/* CARD */
+
+.confirmar-card {
+  width: 100%;
+  max-width: 500px;
+
+  padding: 45px;
+
+  background-color: #ffffff;
+  border: 1px solid #e8eee8;
+  border-radius: 18px;
+
+  box-shadow: 0 15px 45px #26352c08;
+
+  text-align: center;
+}
+
+/* ÍCONE */
+
+.confirmar-icone {
+  width: 80px;
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto 25px;
+
+  border-radius: 25px;
+  background-color: #e1f2e4;
+
+  font-size: 38px;
+}
+
+/* TÍTULO */
+
+.subtitulo {
+  color: #27834e;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.confirmar-card h1 {
+  margin: 18px 0;
+
+  color: #26352c;
+  font-size: 32px;
+}
+
+.descricao {
+  margin: 0 0 15px;
+
+  color: #68766c;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.descricao-secundaria {
+  margin: 0 0 30px;
+
+  color: #879188;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* AVISO */
+
+.aviso-email {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+
+  margin-bottom: 25px;
+  padding: 18px;
+
+  border-radius: 10px;
+  background-color: #f3f8f3;
+
+  text-align: left;
+}
+
+.aviso-icone {
+  font-size: 25px;
+}
+
+.aviso-email strong {
+  display: block;
+  margin-bottom: 7px;
+
+  color: #27834e;
+  font-size: 14px;
+}
+
+.aviso-email p {
+  margin: 0;
+
+  color: #78847b;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+/* BOTÃO */
+
+.botao-reenviar {
+  width: 100%;
+  height: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 20px;
+
+  border: none;
+  border-radius: 9px;
+
+  background-color: #27834e;
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.botao-reenviar:hover {
+  background-color: #1c633a;
+  transform: translateY(-2px);
+}
+
+.botao-reenviar span {
+  font-size: 22px;
+}
+
+/* LINK VOLTAR */
+
+.link-voltar {
+  display: inline-block;
+  margin-top: 30px;
+
+  color: #78847b;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.link-voltar:hover {
+  color: #27834e;
+}
+
+/* RODAPÉ */
+
+.rodape {
+  padding: 25px 15px;
+  text-align: center;
+}
+
+.rodape p {
+  margin: 0;
+
+  color: #9aa49c;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+  .cabecalho {
+    padding: 20px 5%;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .logo-icone {
+    font-size: 27px;
+  }
+
+  .link-login {
+    font-size: 12px;
+  }
+
+  .confirmar-main {
+    padding: 30px 15px;
+  }
+
+  .confirmar-card {
+    padding: 30px 22px;
+  }
+
+  .confirmar-card h1 {
+    font-size: 27px;
+  }
+
+  .descricao {
+    font-size: 14px;
+  }
+
+  .descricao-secundaria {
+    font-size: 13px;
+  }
+
+  .botao-reenviar {
+    height: 50px;
+    font-size: 14px;
+  }
+}
